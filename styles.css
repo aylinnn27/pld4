@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600&display=swap');
+
+body{
+    margin: 0;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+header {
+    justify-content: space-between;
+    display:flex;
+    padding:2vw 5vw;
+}
+nav {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+nav a{
+    padding: 0vw 2vw;
+    text-decoration: none;
+    font-size:30px;
+    color: white;
+}
+.hero h1{
+    font-weight: bold;
+    font-size: 90px;
+}
+
+.hero {
+  background-image: url("https://i.postimg.cc/XYvz3rHv/image.png");
+  background-position: 10% center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.titles{
+    justify-items: center;
+    padding: 10vw 3vw 10vw 15vw
+}
+.titles h2{
+    font-size: 60px;
+    font-weight: 900;
+    margin-bottom: 20px;
+}
+.titles p{
+    font-style: italic;
+    font-weight: 400;
+    font-size: 27px;
+    text-align: center;
+    
+}
+nav a:hover {
+    color: #FFD700; 
+    border-bottom: 1px solid white;
+  }
+  .boxes{
+    display: flex;
+    flex-direction: column;
+    padding: 6vw;
+    gap:20px
+  }
+  .boxes h2{
+    font-size: 40px
+  }
+.info-box {
+  background-color: #ffffff;
+  border: 1px solid #ccc;
+  border-left: 5px solid #990000;
+  padding: 1vw;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+  border-radius: 6px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.info-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 16px rgba(0, 0, 0, 0.1);
+}
+  .contacts {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+    padding: 40px;
+    background-color: #990000;
+  }
+  
+  .cform {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 700px;
+    background: white;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  .cform h2 {
+    margin-bottom: 20px;
+    text-align: center;
+    color: #691414;
+    font-size: 50px;
+  }
+  
+  .forms {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+  }
+  
+  .forms label {
+    margin-bottom: 5px;
+    font-weight: 600;
+    font-size: 25px;
+  }
+  
+  .forms input,
+  .forms textarea {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  button[type="submit"] {
+    background-color: #691414;
+    color: white;
+    padding: 12px;
+    font-size: 25px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background 0.3s;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #8b1f1f;
+  }
+  footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+    background-color: #691414;
+  }
+  
+  .footer-icons {
+    display: flex-end;
+    gap: 30px;
+    margin-right: 25px;
+  }
+  
+  .footer-icons img {
+    height: 30px;
+    width: auto;
+  }
+  
+footer p {
+    margin: 0;
+    display: flex;
+    justify-content: left;
+    font-size: 25px;
+    font-weight: 400;
+  }
+
+
+@media (min-width: 768px){
+    header{
+        padding:0vw 4vw;
+    }
+    .hero h1{
+        font-size: 70px
+    }
+    nav a{
+        font-size: 23px;
+    }
+    .titles{
+        padding: 10vw 0vw 10vw 30vw
+    }
+    .titles h2{
+    font-size: 45px;
+    }
+    .titles p{
+        font-size: 20px;
+        width: 50vw
+    }
+    .boxes h2{
+    font-size: 27px
+    }
+    .cform{
+        max-width: 500px;
+    }
+    .cform h2{
+        font-size: 40px;
+    }
+    .forms label {
+        font-size: 20px;
+    }
+    button[type="submit"]{
+        font-size: 20px;
+    }
+    footer{
+        padding: 30px
+    }
+    footer p{
+        font-size: 20px
+    }
+    .footer-icons img {
+        height: 25px
+    }
+    .boxes{
+      display: grid;
+      grid-template-columns: 1fr 1fr; 
+    }
+}
